@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add New Video | Video Library</title>
+    <script src="/src/public/scripts/formValidator.js" defer></script>
+    <link rel="stylesheet" href="/src/public/stylesheets/main.css">
+    <link rel="stylesheet" href="/src/public/stylesheets/form.css">
+</head>
+<body>
+
+<div class="container">
+    <form method="POST">
+        <h1>Add New Video</h1>
+
+        <label>Video url:</label><br>
+        <input type="url" name="url" required><br>
+
+        <label >Video Title:</label><br>
+        <input type="text" name="title" minlength="3" required><br>
+
+        <label >Video description:</label><br>
+        <textarea name="description" cols="30" rows="10" required></textarea><br>
+
+        <label >Tags:</label><br>
+        <input type="text" name="tags"><br>
+
+        <button type="submit" id="add-new-video">Add New Video</button>
+    </form>
+</div>
+</body>
+</html>
